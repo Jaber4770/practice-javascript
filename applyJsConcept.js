@@ -90,17 +90,17 @@ function isLeepYear(year) {
 
 let checkigYear = 2016;
 let getLeepYear = isLeepYear(checkigYear);
-console.log(checkigYear, "leep year:",getLeepYear);
+console.log(checkigYear, "leep year:", getLeepYear);
 
 
 
 // Proper way to check leep year:
 
-function isMyYearLeepYear (checkingYear){
-    if(((checkingYear % 4 == 0) && ( checkingYear % 100 != 0)) || (checkingYear % 400 == 0)){
+function isMyYearLeepYear(checkingYear) {
+    if (((checkingYear % 4 == 0) && (checkingYear % 100 != 0)) || (checkingYear % 400 == 0)) {
         console.log(checkingYear, "is a leep year");
     }
-    else{
+    else {
         console.log(checkingYear, "is not a leep year");
     }
 }
@@ -109,11 +109,50 @@ let myYearIs = 2023;
 isMyYearLeepYear(myYearIs);
 
 
+// Factorial____Factorial____Factorial____Factorial____Factorial____Factorial____Factorial
 
 
+let factorial = 1;
+for (let i = 1; i <= 7; i++) {
+    factorial = factorial * i;
+}
+console.log("factorial number is:", factorial);
 
 
+// Factorial with function____Factorial with function____Factorial with function____
 
+// factorial with incremental
+
+function getFactorial(numbers) {
+    let factorialNumber = 1;
+    for (let i = 1; i <= numbers; i++) {
+        factorialNumber = factorialNumber * i;
+    }
+    return factorialNumber;
+}
+
+
+let countNumOfFactorial = 7;
+let getFacotialResult = getFactorial(countNumOfFactorial);
+console.log("Factorial of", countNumOfFactorial, "is", getFacotialResult);
+
+
+// factorial with decremental
+
+function DecremenalFactorial(factoNumber) {
+    let factorialNUm = 1;
+    let i = factoNumber;
+    while (i >= 1) {
+        factorialNUm = factorialNUm * i;
+        i--;
+    }
+    return factorialNUm;
+}
+
+
+let sendNum = 5;
+let getDecrementalResult = DecremenalFactorial(sendNum);
+console.log("decremental factorial of", sendNum, "is", getDecrementalResult);
 
 
 
