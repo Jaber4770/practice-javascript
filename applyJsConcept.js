@@ -186,13 +186,37 @@ console.log("without recusion but easy way to get result is:", (n * (n + 1)) / 2
 function celToFarenheit(celciuse) {
     textToNum = parseFloat(celciuse);
     let fahrenheit = textToNum * 9 / 5 + 32;
-    fahrenheit.toFixed(2);
+    fahrenheit = fahrenheit.toFixed(2);
     return fahrenheit;
 }
 
 let celciuseScale = 500;
 let getFahrenheitResult = celToFarenheit(celciuseScale);
 console.log("Your converted result is:", getFahrenheitResult, "F");
+
+
+// Fahrenheit to celcius____Fahrenheit to celcius____Fahrenheit to celcius____
+
+
+function fahrenheitToCelcius(fahrenheitNumber) {
+    let convertTextToNum = parseFloat(fahrenheitNumber);
+    let getCelcius = (convertTextToNum - 32) * 5 / 9;
+    getCelcius = getCelcius.toFixed(2);
+    return getCelcius;
+}
+
+let checkFahrenheitNumber = 98;
+let getCelciusResult = fahrenheitToCelcius(checkFahrenheitNumber);
+console.log(getCelciusResult);
+
+
+
+
+
+
+
+
+
 
 
 
