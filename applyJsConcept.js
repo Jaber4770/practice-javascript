@@ -18,7 +18,7 @@ console.log(moonUP);
 
 // inch to feet convert____inch to feet convert____inch to feet convert____
 
-function inchToFeet(inch){
+function inchToFeet(inch) {
     let feet = inch / 12;
     return feet;
 }
@@ -27,13 +27,13 @@ function inchToFeet(inch){
 let inch = 150;
 let feetResult = inchToFeet(inch);
 let integerNumber = feetResult.toFixed(2);
-console.log(integerNumber,"Feet");
+console.log(integerNumber, "Feet");
 
 
 
 // Mile to Kilo Meter______Mile to Kilo Meter______Mile to Kilo Meter______
 
-function mileToKM(mile){
+function mileToKM(mile) {
     let Kilometer = mile * 1.60934;
     return Kilometer;
 }
@@ -41,4 +41,43 @@ function mileToKM(mile){
 let mile = 20;
 let getKmResult = mileToKM(mile);
 let getFinalKmResult = getKmResult.toFixed(2);
-console.log(getFinalKmResult,"km");
+console.log(getFinalKmResult, "km");
+
+//cheking odd or even number____cheking odd or even number____cheking odd or even number
+
+// even number checking___even number checking___
+
+function evenNumChecker(naturalNumber) {
+    if (naturalNumber % 2 == 0) {
+        return true;
+    }
+    return false;
+}
+
+
+let nturlNumber = 20;
+let getEvenNum = evenNumChecker(nturlNumber);
+console.log("Even Number:", getEvenNum);
+
+
+
+// cheking odd number____cheking odd number____cheking odd number
+
+
+function getOddNum(naturlNumber) {
+    if (naturlNumber % 2 != 0) {
+        return true;
+    }
+    return false;
+}
+
+
+let naturalNum = 51;
+let getOddReult = getOddNum(naturalNum);
+console.log("Odd Number:", getOddReult);
+
+
+
+
+
+
