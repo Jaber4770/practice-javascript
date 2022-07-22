@@ -155,6 +155,25 @@ let getDecrementalResult = DecremenalFactorial(sendNum);
 console.log("decremental factorial of", sendNum, "is", getDecrementalResult);
 
 
+// Factorial Recursion____Factorial Recursion____Factorial Recursion____
+// i will avoid the recursion on js
+
+function sum(n) {
+    if (n == 0) {
+        return 0;
+    }
+    else {
+        return sum(n - 1) + n;
+    }
+}
+
+console.log("factorial with recursion is:", sum(3))
+
+// proper and alternative of js recursion
+// the formula is ((n*(n+1))/2)
+
+let n = 100000;
+console.log("without recusion but easy way to get result is:", (n * (n + 1)) / 2);
 
 
 
