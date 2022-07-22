@@ -79,6 +79,8 @@ console.log("Odd Number:", getOddReult);
 
 // chekig leep year______chekig leep year______chekig leep year______chekig leep year
 
+// Basic leep year cheking programm:
+
 function isLeepYear(year) {
     if (year % 4 == 0) {
         return true;
@@ -89,6 +91,22 @@ function isLeepYear(year) {
 let checkigYear = 2016;
 let getLeepYear = isLeepYear(checkigYear);
 console.log(checkigYear, "leep year:",getLeepYear);
+
+
+
+// Proper way to check leep year:
+
+function isMyYearLeepYear (checkingYear){
+    if((checkingYear % 4 == 0) && ( checkingYear % 100 != 0) || (checkingYear % 400 == 0)){
+        console.log(checkingYear, "is a leep year");
+    }
+    else{
+        console.log(checkingYear, "is not a leep year");
+    }
+}
+
+let myYearIs = 2023;
+isMyYearLeepYear(myYearIs);
 
 
 
