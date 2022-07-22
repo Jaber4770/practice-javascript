@@ -97,7 +97,7 @@ console.log(checkigYear, "leep year:",getLeepYear);
 // Proper way to check leep year:
 
 function isMyYearLeepYear (checkingYear){
-    if((checkingYear % 4 == 0) && ( checkingYear % 100 != 0) || (checkingYear % 400 == 0)){
+    if(((checkingYear % 4 == 0) && ( checkingYear % 100 != 0)) || (checkingYear % 400 == 0)){
         console.log(checkingYear, "is a leep year");
     }
     else{
