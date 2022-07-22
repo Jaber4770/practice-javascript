@@ -14,3 +14,17 @@ function isMoonUp(time) {
 let checkTime = 21;
 let moonUP = isMoonUp(checkTime);
 console.log(moonUP);
+
+
+// inch to feet
+
+function inchToFeet(inch){
+    let feet = inch / 12;
+    return feet;
+}
+
+
+let inch = 150;
+let feetResult = inchToFeet(inch);
+let integerNumber = feetResult.toFixed(2);
+console.log(integerNumber);
