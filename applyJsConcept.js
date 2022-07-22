@@ -13,7 +13,7 @@ function isMoonUp(time) {
 
 let checkTime = 21;
 let moonUP = isMoonUp(checkTime);
-console.log(moonUP);
+console.log("Is moon up:", moonUP);
 
 
 // inch to feet convert____inch to feet convert____inch to feet convert____
@@ -75,6 +75,31 @@ function getOddNum(naturlNumber) {
 let naturalNum = 51;
 let getOddReult = getOddNum(naturalNum);
 console.log("Odd Number:", getOddReult);
+
+
+// chekig leep year______chekig leep year______chekig leep year______chekig leep year
+
+function isLeepYear(year) {
+    if (year % 4 == 0) {
+        return true;
+    }
+    return false;
+}
+
+let checkigYear = 2016;
+let getLeepYear = isLeepYear(checkigYear);
+console.log(checkigYear, "leep year:",getLeepYear);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
