@@ -258,6 +258,44 @@ let studentMarks = 95;
 ExamGrade(studentMarks);
 
 
+// Bank interest_____Bank interest_____Bank interest_____Bank interest_____Bank interest
+
+// simple way to calculate interest of bank:
+
+function bankInterest(principle, time, rate) {
+    let getInterest = ((principle * time * rate) / 100)
+    return getInterest;
+}
+
+let principle = 100000;
+// time is count yearly
+let time = 1;
+let rate = 10;
+let getInterestResult = bankInterest(principle, time, rate);
+console.log("Get your interest of", principle, "is", getInterestResult);
+
+
+// Math______Math______Math______Math______Math______Math______Math______Math______Math
+
+
+// Math.max() & Math.min()_______Math.max() & Math.min():
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
