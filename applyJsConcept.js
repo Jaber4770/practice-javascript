@@ -15,6 +15,24 @@ let checkTime = 21;
 let moonUP = isMoonUp(checkTime);
 console.log("Is moon up:", moonUP);
 
+// next
+function IsMoon_up(time) {
+    if (time >= 19 || time <= 5) {
+        return true;
+    }
+    return false
+}
+
+let checkingTimg = 12;
+let moonUp = IsMoon_up(checkingTimg);
+console.log("Is moon up? Ans:", moonUp);
+
+
+
+
+
+
+
 
 // inch to feet convert____inch to feet convert____inch to feet convert____
 
@@ -23,11 +41,24 @@ function inchToFeet(inch) {
     return feet;
 }
 
-
 let inch = 150;
 let feetResult = inchToFeet(inch);
 let integerNumber = feetResult.toFixed(2);
 console.log(integerNumber, "Feet");
+
+
+// next
+
+function inchtofeet (inch){
+    let feet = inch/12;
+    return feet;
+}
+
+let sendinginch = 12;
+let getingresult = inchtofeet(sendinginch);
+console.log("your result in feet is:",getingresult);
+
+
 
 
 
@@ -118,6 +149,14 @@ for (let i = 1; i <= 7; i++) {
 }
 console.log("factorial number is:", factorial);
 
+// next
+
+let factorialnumber = 1;
+for(let i = 1; i<5; i++){
+    factorialnumber = factorialnumber * 1;
+}
+
+console.log("factorial of 5 is:", factorialnumber);
 
 // Factorial with function____Factorial with function____Factorial with function____
 
@@ -281,23 +320,42 @@ console.log("Get your interest of", principle, "is", getInterestResult);
 // Math.max() & Math.min()_______Math.max() & Math.min():
 
 
+let mathNumber = [23, 34, 45, 56, 67, 78, 65, 5433432, 434, 45, 4, 65, 6, 565];
+let bigNumber = Math.max(...mathNumber);
+console.log("Largest number in the array is:", bigNumber);
+
+console.log("largest number:", Math.max(23, 34, 454, 565))
+let lowestNumber = Math.min(...mathNumber);
+console.log("the lowest number in array is:", lowestNumber);
 
 
 
+// making positive numbe of any number:
+// math.abs():
+let NegativeNumber = [-23, -34, -45, -56, -67, -78, -65, -6, -5];
+console.log("making positive number from negative number of an array:", Math.abs(...NegativeNumber));
 
 
 
+// math ceil
+
+let checMathNumber = 4.5433;
+let checkCeilNum = Math.ceil(checMathNumber);
+console.log(checkCeilNum);
+
+// math floor
+
+let checkFloorNum = Math.floor(checMathNumber);
+console.log(checkFloorNum);
 
 
+// math round
+let roundNumber = 44.4534;
+let checkRound = Math.round(roundNumber);
+console.log(checkRound);
 
 
-
-
-
-
-
-
-
+// ge random number
 
 
 

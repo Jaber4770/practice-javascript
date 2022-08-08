@@ -397,8 +397,3 @@ let phones = ["appo", "walton", "samsung", "apple", "sony", "redmi", "realme", "
 if(phones.indexOf("lg") == -1){
     console.log("lg is missing");
 }
-
-
-
-
-
